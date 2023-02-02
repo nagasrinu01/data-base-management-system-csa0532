@@ -1,0 +1,63 @@
+mysql> use company;
+ERROR 1049 (42000): Unknown database 'company'
+mysql> create database company;
+Query OK, 1 row affected (0.00 sec)
+
+mysql> use company;
+Database changed
+mysql> create table company(companyid int(20),comname varchar(20), comdept varchar(10),salary int(20));
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> desc company;
++-----------+-------------+------+-----+---------+-------+
+| Field     | Type        | Null | Key | Default | Extra |
++-----------+-------------+------+-----+---------+-------+
+| companyid | int(20)     | YES  |     | NULL    |       |
+| comname   | varchar(20) | YES  |     | NULL    |       |
+| comdept   | varchar(10) | YES  |     | NULL    |       |
+| salary    | int(20)     | YES  |     | NULL    |       |
++-----------+-------------+------+-----+---------+-------+
+4 rows in set (0.02 sec)
+
+mysql> show tables;
++-------------------+
+| Tables_in_company |
++-------------------+
+| company           |
++-------------------+
+1 row in set (0.00 sec)
+
+mysql> crate database officer
+    -> create database officer;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'crate database officer
+create database officer' at line 1
+mysql> create database office;
+Query OK, 1 row affected (0.00 sec)
+
+mysql> use office;
+Database changed
+mysql> create table office(offid int(20),offname varchar(20),offdept varchar(10),salary int(20));
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> desc office;
++---------+-------------+------+-----+---------+-------+
+| Field   | Type        | Null | Key | Default | Extra |
++---------+-------------+------+-----+---------+-------+
+| offid   | int(20)     | YES  |     | NULL    |       |
+| offname | varchar(20) | YES  |     | NULL    |       |
+| offdept | varchar(10) | YES  |     | NULL    |       |
+| salary  | int(20)     | YES  |     | NULL    |       |
++---------+-------------+------+-----+---------+-------+
+4 rows in set (0.02 sec)
+
+mysql> show tables;
++------------------+
+| Tables_in_office |
++------------------+
+| office           |
++------------------+
+1 row in set (0.00 sec)
+
+mysql>
+
+
