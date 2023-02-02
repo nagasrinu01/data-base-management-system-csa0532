@@ -1,0 +1,199 @@
+
+mysql> create database sse;
+ERROR 1007 (HY000): Can't create database 'sse'; database exists
+mysql> create database sse;
+ERROR 1007 (HY000): Can't create database 'sse'; database exists
+mysql> create database faculty;
+ERROR 1007 (HY000): Can't create database 'faculty'; database exists
+mysql> create database student;
+Query OK, 1 row affected (0.01 sec)
+
+mysql> use student;
+Database changed
+mysql> student(stuid int(20),stuname varchar(20),studept varchar(10),salary int(20));
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'student(stuid int(20),stuname varchar(20),studept varchar(10),salary int(20))' at line 1
+mysql> create table student(stuid int(20),stuname varchar(20),studept varchar(10),salary int(20));
+Query OK, 0 rows affected (0.04 sec)
+
+mysql> desc student;
++---------+-------------+------+-----+---------+-------+
+| Field   | Type        | Null | Key | Default | Extra |
++---------+-------------+------+-----+---------+-------+
+| stuid   | int(20)     | YES  |     | NULL    |       |
+| stuname | varchar(20) | YES  |     | NULL    |       |
+| studept | varchar(10) | YES  |     | NULL    |       |
+| salary  | int(20)     | YES  |     | NULL    |       |
++---------+-------------+------+-----+---------+-------+
+4 rows in set (0.03 sec)
+
+mysql> show tables;
++-------------------+
+| Tables_in_student |
++-------------------+
+| student           |
++-------------------+
+1 row in set (0.01 sec)
+
+mysql> desc student;
++---------+-------------+------+-----+---------+-------+
+| Field   | Type        | Null | Key | Default | Extra |
++---------+-------------+------+-----+---------+-------+
+| stuid   | int(20)     | YES  |     | NULL    |       |
+| stuname | varchar(20) | YES  |     | NULL    |       |
+| studept | varchar(10) | YES  |     | NULL    |       |
+| salary  | int(20)     | YES  |     | NULL    |       |
++---------+-------------+------+-----+---------+-------+
+4 rows in set (0.02 sec)
+
+mysql> desc studepartment;
+ERROR 1146 (42S02): Table 'student.studepartment' doesn't exist
+mysql> desc studepartment;
+ERROR 1146 (42S02): Table 'student.studepartment' doesn't exist
+mysql> desc student;
++---------+-------------+------+-----+---------+-------+
+| Field   | Type        | Null | Key | Default | Extra |
++---------+-------------+------+-----+---------+-------+
+| stuid   | int(20)     | YES  |     | NULL    |       |
+| stuname | varchar(20) | YES  |     | NULL    |       |
+| studept | varchar(10) | YES  |     | NULL    |       |
+| salary  | int(20)     | YES  |     | NULL    |       |
++---------+-------------+------+-----+---------+-------+
+4 rows in set (0.02 sec)
+
+mysql> desc student;
++---------+-------------+------+-----+---------+-------+
+| Field   | Type        | Null | Key | Default | Extra |
++---------+-------------+------+-----+---------+-------+
+| stuid   | int(20)     | YES  |     | NULL    |       |
+| stuname | varchar(20) | YES  |     | NULL    |       |
+| studept | varchar(10) | YES  |     | NULL    |       |
+| salary  | int(20)     | YES  |     | NULL    |       |
++---------+-------------+------+-----+---------+-------+
+4 rows in set (0.02 sec)
+mysql> create database sse;
+ERROR 1007 (HY000): Can't create database 'sse'; database exists
+mysql> create database sse;
+ERROR 1007 (HY000): Can't create database 'sse'; database exists
+mysql> create database faculty;
+ERROR 1007 (HY000): Can't create database 'faculty'; database exists
+mysql> create database student;
+Query OK, 1 row affected (0.01 sec)
+
+mysql> use student;
+Database changed
+mysql> student(stuid int(20),stuname varchar(20),studept varchar(10),salary int(20));
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'student(stuid int(20),stuname varchar(20),studept varchar(10),salary int(20))' at line 1
+mysql> create table student(stuid int(20),stuname varchar(20),studept varchar(10),salary int(20));
+Query OK, 0 rows affected (0.04 sec)
+
+mysql> desc student;
++---------+-------------+------+-----+---------+-------+
+| Field   | Type        | Null | Key | Default | Extra |
++---------+-------------+------+-----+---------+-------+
+| stuid   | int(20)     | YES  |     | NULL    |       |
+| stuname | varchar(20) | YES  |     | NULL    |       |
+| studept | varchar(10) | YES  |     | NULL    |       |
+| salary  | int(20)     | YES  |     | NULL    |       |
++---------+-------------+------+-----+---------+-------+
+4 rows in set (0.03 sec)
+
+mysql> show tables;
++-------------------+
+| Tables_in_student |
++-------------------+
+| student           |
++-------------------+
+1 row in set (0.01 sec)
+
+mysql> desc student;
++---------+-------------+------+-----+---------+-------+
+| Field   | Type        | Null | Key | Default | Extra |
++---------+-------------+------+-----+---------+-------+
+| stuid   | int(20)     | YES  |     | NULL    |       |
+| stuname | varchar(20) | YES  |     | NULL    |       |
+| studept | varchar(10) | YES  |     | NULL    |       |
+| salary  | int(20)     | YES  |     | NULL    |       |
++---------+-------------+------+-----+---------+-------+
+4 rows in set (0.02 sec)
+
+mysql> desc studepartment;
+ERROR 1146 (42S02): Table 'student.studepartment' doesn't exist
+mysql> desc studepartment;
+ERROR 1146 (42S02): Table 'student.studepartment' doesn't exist
+mysql> desc student;
++---------+-------------+------+-----+---------+-------+
+| Field   | Type        | Null | Key | Default | Extra |
++---------+-------------+------+-----+---------+-------+
+| stuid   | int(20)     | YES  |     | NULL    |       |
+| stuname | varchar(20) | YES  |     | NULL    |       |
+| studept | varchar(10) | YES  |     | NULL    |       |
+| salary  | int(20)     | YES  |     | NULL    |       |
++---------+-------------+------+-----+---------+-------+
+4 rows in set (0.02 sec)
+
+mysql> desc student;
++---------+-------------+------+-----+---------+-------+
+| Field   | Type        | Null | Key | Default | Extra |
++---------+-------------+------+-----+---------+-------+
+| stuid   | int(20)     | YES  |     | NULL    |       |
+| stuname | varchar(20) | YES  |     | NULL    |       |
+| studept | varchar(10) | YES  |     | NULL    |       |
+| salary  | int(20)     | YES  |     | NULL    |       |
++---------+-------------+------+-----+---------+-------+
+4 rows in set (0.02 sec)
+
+mysql> desc employee;
+ERROR 1146 (42S02): Table 'student.employee' doesn't exist
+mysql> desc empdept;
+ERROR 1146 (42S02): Table 'student.empdept' doesn't exist
+mysql> desc student;
++---------+-------------+------+-----+---------+-------+
+| Field   | Type        | Null | Key | Default | Extra |
++---------+-------------+------+-----+---------+-------+
+| stuid   | int(20)     | YES  |     | NULL    |       |
+| stuname | varchar(20) | YES  |     | NULL    |       |
+| studept | varchar(10) | YES  |     | NULL    |       |
+| salary  | int(20)     | YES  |     | NULL    |       |
++---------+-------------+------+-----+---------+-------+
+4 rows in set (0.02 sec)
+
+mysql> create database faculty;
+ERROR 1007 (HY000): Can't create database 'faculty'; database exists
+mysql> create database teather;
+Query OK, 1 row affected (0.00 sec)
+
+mysql> create database teacher;
+Query OK, 1 row affected (0.00 sec)
+
+mysql> use teacher;
+Database changed
+mysql> create teacher(teacherid int(20),teaname varchar(20),teadept varchar(10),salary int(20));
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'teacher(teacherid int(20),teaname varchar(20),teadept varchar(10),salary int(20)' at line 1
+mysql> create table teacher(teacherid int(20),teaname varchar(20),teadept varchar(10),salary int(20);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+mysql> create table teacher(teacherid int(20),teachername varchar(20),teacher varchar
+    -> (10),salary int(20));
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> desc teacher;
++-------------+-------------+------+-----+---------+-------+
+| Field       | Type        | Null | Key | Default | Extra |
++-------------+-------------+------+-----+---------+-------+
+| teacherid   | int(20)     | YES  |     | NULL    |       |
+| teachername | varchar(20) | YES  |     | NULL    |       |
+| teacher     | varchar(10) | YES  |     | NULL    |       |
+| salary      | int(20)     | YES  |     | NULL    |       |
++-------------+-------------+------+-----+---------+-------+
+4 rows in set (0.02 sec)
+
+mysql> show tables;
++-------------------+
+| Tables_in_teacher |
++-------------------+
+| teacher           |
++-------------------+
+1 row in set (0.00 sec)
+
+mysql>
+
+
