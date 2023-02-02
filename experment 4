@@ -1,0 +1,103 @@
+mysql> use student;
+Database changed
+mysql> desc student;
++---------+-------------+------+-----+---------+-------+
+| Field   | Type        | Null | Key | Default | Extra |
++---------+-------------+------+-----+---------+-------+
+| stuid   | int(20)     | YES  |     | NULL    |       |
+| stuname | varchar(20) | YES  |     | NULL    |       |
+| studept | varchar(10) | YES  |     | NULL    |       |
+| salary  | int(20)     | YES  |     | NULL    |       |
++---------+-------------+------+-----+---------+-------+
+4 rows in set (0.02 sec)
+
+mysql> insert into student values('126','lakshmi','m','98564127');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into student values('126','gokul','m','9949818867');
+ERROR 1264 (22003): Out of range value for column 'salary' at row 1
+mysql>  insert into student values6)'300','gokul','m','9949818867');
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'values6)'300','gokul','m','9949818867')' at line 1
+mysql> insert into student values('300','gokul','m','99498867');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> select*from student;
++-------+---------+---------+----------+
+| stuid | stuname | studept | salary   |
++-------+---------+---------+----------+
+|   126 | lakshmi | m       | 98564127 |
+|   300 | gokul   | m       | 99498867 |
++-------+---------+---------+----------+
+2 rows in set (0.01 sec)
+
+mysql>  select name from student;
+ERROR 1054 (42S22): Unknown column 'name' in 'field list'
+mysql> select Name from student;
+ERROR 1054 (42S22): Unknown column 'Name' in 'field list'
+mysql> select studentname;
+ERROR 1054 (42S22): Unknown column 'studentname' in 'field list'
+mysql> select stuname from student;
++---------+
+| stuname |
++---------+
+| lakshmi |
+| gokul   |
++---------+
+2 rows in set (0.00 sec)
+
+mysql> select*from students where name="lakshmi";
+ERROR 1146 (42S02): Table 'student.students' doesn't exist
+mysql> select*from stu where name="lakshmi":
+    -> select*from stu where name="lakshmi";
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':
+select*from stu where name="lakshmi"' at line 1
+mysql> select * from student where name='lakshmi';
+ERROR 1054 (42S22): Unknown column 'name' in 'where clause'
+mysql> select * from student where stuname='lakshmi';
++-------+---------+---------+----------+
+| stuid | stuname | studept | salary   |
++-------+---------+---------+----------+
+|   126 | lakshmi | m       | 98564127 |
++-------+---------+---------+----------+
+1 row in set (0.01 sec)
+
+mysql>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
