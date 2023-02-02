@@ -1,0 +1,31 @@
+mysql> select*from mentees;
++-----------+---------+------+---------+------------+
+| Regno     | Name    | Dept | Address | Fathername |
++-----------+---------+------+---------+------------+
+| 192011090 | Gowtham | CSE  | Erode   | moorthi    |
+| 192011079 | arun    | CSE  | nellore | muthu      |
+| 192011095 | Harish  | ECE  | Madurai | Kannan     |
+| 192011080 | Harini  | ECE  | Tanjore | Velu       |
+| 192211080 | Dhivya  | ECE  | Tirupur | Ramesh     |
++-----------+---------+------+---------+------------+
+5 rows in set (0.00 sec)
+
+mysql> select Name from mentees;
++---------+
+| Name    |
++---------+
+| Gowtham |
+| arun    |
+| Harish  |
+| Harini  |
+| Dhivya  |
++---------+
+5 rows in set (0.00 sec)
+
+mysql> select*from mentees where Name="Gowtham";
++-----------+---------+------+---------+------------+
+| Regno     | Name    | Dept | Address | Fathername |
++-----------+---------+------+---------+------------+
+| 192011090 | Gowtham | CSE  | Erode   | moorthi    |
++-----------+---------+------+---------+------------+
+1 row in set (0.00 sec)
